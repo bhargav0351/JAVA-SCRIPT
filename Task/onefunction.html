@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funtion</title>
+</head>
+<body>
+    <input type="text" name="uname" id="" onblur="fantastic(this,'error1','Name')">
+    <span id="error1"></span><br><br>
+    <input type="text" name="password" id=""    >
+    <span id="error2"></span><br><br>
+    <input type="text" name="Emial" id=""onblur="fantastic(this,'error3','Email')">
+    <span id="error3"></span><br><br>
+    <input type="text" name="Mobile" id=""onblur="fantastic(this,'error4','Mobile')">
+    <span id="error4"></span><br><br>
+    
+    <script>
+        function fantastic(a,message,input) {
+            if(a.value == '')
+            {
+                document.getElementById(message).innerText="Enter valid" + " "+input;
+            }
+            else
+            {
+                document.getElementById('');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-detail</title>
+</head>
+<body>
+    <div>
+        <input type="text" name="uname" placeholder="Enter name" id="name" onblur="name1()"><br>
+        <span id="span1"></span>
+        <input type="text" name="upass" placeholder="Enter pssword" id="password" onblur="password1()"><br>
+        <span id="span2"></span>
+        <input type="text" name="umobile" placeholder="Enter mobile" id="mobile" onblur="number1()"><br>
+        <span id="span3"></span>
+        <input type="text" name="uemail" placeholder="Enter email" id="email" onblur="email()"> 
+        <span id="span4"></span>   
+    </div>
+
+    <script>
+        function name1()
+        {
+            let userdata = document.getElementById("name").Value
+            if(userdata == "")
+            {
+                console.log("enter the corecat user name")
+                document.getElementById("span1").innerText = "enter the corecat user name"
+            }
+            else
+            {
+                console.log("enter the corecat user name")
+                document.getElementById("span1").innerText = ""
+            }
+        }
+
+        function password1()
+        {
+            let userpassword = document.getElementById("pssword").Value
+            if(userdata == "")
+            {
+                console.log("enter the corecat user password")
+                document.getElementById("span2").innerText = "enter the corecat user name"
+            }
+            else
+            {
+                console.log("enter the corecat user name")
+                document.getElementById("span2").innerText = ""
+            }
+        }
+
+        function number1()
+        {
+            let userpassword = document.getElementById("pssword").Value
+            if(userdata == "")
+            {
+                console.log("enter the corecat user password")
+                document.getElementById("span2").innerText = "enter the corecat user name"
+            }
+            else
+            {
+                console.log("enter the corecat user name")
+                document.getElementById("span2").innerText = ""
+            }
+        }
+        
+    </script>
+</body>
+</html>

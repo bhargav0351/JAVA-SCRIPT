@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shape</title>
+</head>
+<body>
+    <h1>first shape</h1>
+    <script>
+        for (let i = 0; i <= 9; i++)
+        {
+            for (let j = 0; j <= i; j++)
+            {
+                // document.write(j)
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+
+    </script>
+
+    <h1>second shape</h1>
+    <script>
+        for (let b = 0; b <= 9; b++) 
+        {
+            for (let k = 0; k <= 9; k++) {
+                document.write("@")
+            }
+            document.write("<br>")
+        }
+    </script>
+
+    <h1>thrid shape</h1>
+    <script>
+    for (i = 0; i <= 9; i++ )
+    {
+        document.write("</br>");
+        for ( j = 0; j < 10-i   ; j++ )
+        {
+            document.write("&nbsp&nbsp");
+        }
+        for ( j = 10-i; j <= 9; j++)
+        {
+            document.write("$");    
+        }
+    }
+    </script>
+</body>
+</html>

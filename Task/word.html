@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word</title>
+</head>
+<body>
+    <div class="word">
+        <input type="text" id="name" placeholder="Enter word">
+        <input type="text" id="bhargav" placeholder="Find">
+        <input type="text" id="mehul"  placeholder="Replace">
+    </div>
+    <div>
+        <button onclick="Uppercase()">Upper case</button>
+        <button onclick="Lowercase()">Lower case</button>
+        <button onclick="count()">Character count</button>
+        <button onclick="Wordcount()">Word count</button>
+        <button onclick="Clear()">Clear</button>
+        <!-- <button onclick="Find()">Find</button> -->
+        <button onclick="Replace()">Replace</button>
+        <button onclick="Removespace()">Remove extra space</button>
+    </div>
+        
+    <script>
+        let text=document.getElementById('name');
+
+        function Uppercase()
+        {
+             console.log(text.value);
+             console.log(text.value.toUpperCase());
+        }
+
+        function Lowercase()
+         {
+            console.log(text.value);
+            console.log(text.value.toLowerCase());    
+        }
+
+        function count()
+        {
+            console.log(text.value);
+            console.log(text.value.length);
+        }
+
+        // function Wordcount()
+        // {
+        //     console.log(text.value);
+        //     console.log(text.split(/\s+/).length);
+        // }
+
+        function Clear()
+        {
+            console.log(text.value)
+            text.value=""  //remove the word
+        }
+
+        // function find()
+        // {
+        //     console.log(text.value);
+        // }
+
+        function Replace()
+        {
+            console.log(text.value);
+            document.getElementById(mehul).innerText= "";
+            console.log(text.value.Replace("parmar"))
+        }
+
+        function Removespace()
+        {
+            console.log(text.value);
+            console.log(text.value.trim());
+        }
+    </script>
+</body>
+</html>

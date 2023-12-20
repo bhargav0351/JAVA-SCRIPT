@@ -1,0 +1,301 @@
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login Page</title>
+    <style>
+        #janu
+        {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            /* border: 1px solid black; */
+        }
+        h1{
+            /* text-align: center; */
+            background-image: url(https://static.cdninstagram.com/rsrc.php/v3/yM/r/8n91YnfPq0s.png);
+            background-position: 0px -52px;
+            background-size: auto;
+            width: 175px;
+            height: 51px;
+            background-repeat: no-repeat;
+            display: inline-block;
+        }
+        input{
+            width: 300px;
+            padding: 5px;
+            margin: 10px 0px;
+            /* margin: 0 auto;kj */
+        }
+        button{
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+            margin: 10px 0px;
+            border-radius: 5px;
+            background-color: rgb(59, 165, 226);
+            width: 300px;
+            border: 0px;
+        }
+        #bhargav
+        {
+            /* padding: 10px 100px; */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="janu">
+        <div>
+            <h1></h1>
+            <div>
+                <input type="text" id="" placeholder="Phone number,Mobile number,Email" oninput="fantastic(this,'error1','Phone number,Mobile number,Email')">
+                <span id="error1"></span><br>
+                <input type="text" id="" placeholder="password" oninput="fantastic(this,'error2','Password')">
+                <span id="error2"></span><br>
+                <button>Log in</button>
+            </div>
+            <div id="bhargav">
+                <img src="" alt="">
+                <p>
+                    Log in with Facebook
+                </p>
+                <p onclick="(mehul)">
+                    Forget password?
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function fantastic(a,message,input)
+        {
+            if(a.value == '')
+            {
+                document.getElementById(message).innerText="Enter valid" + " "+input;
+                document.getElementById(message).style.direction= "bolck"
+                document.getElementById(message).innerText="Enter valid" + " "+input;
+            }
+            else
+            {
+                document.getElementById('');
+            }
+        }
+        function mehul() 
+        {
+            if(forget= "")
+            {
+                console.log("you are very genius");
+            }
+        }
+    </script>
+</body>
+</html> -->
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        #Instagram
+        {
+            margin: 0 auto;
+            width: 30%;
+            /* padding: 0px; */
+            font-size: 15px;
+            box-sizing: border-box
+        }
+        .login
+        {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            padding: 15px;
+            position: relative;
+        }
+        h1{
+            background-image: url(https://static.cdninstagram.com/rsrc.php/v3/yM/r/8n91YnfPq0s.png);
+            background-position: 100px -52px;
+            /* background-size: contain; */
+            /* width: 175px; */
+            height: 51px;
+            background-repeat: no-repeat;
+            /* display: inline-block; */
+        }
+        .login,input
+        {
+            margin: 10px 0px;
+        }
+        input
+        {
+            padding: 25px 10px 7px;
+        }
+        #b2
+        {
+            margin: 5px 0px;
+            padding: 10px;
+            border: 0px;
+            border-radius: 5PX;
+            background-color: rgb(49, 129, 235);
+        }
+        .Login>p
+        {
+            text-align: center;
+            /* font-weight: 700; */
+            /* font-size: 17px; */
+            padding: 0px;
+        }
+        #f-icon
+        {
+            color: blue;
+            margin-right: 5px;
+        }
+        .deepak
+        {
+            border: 1px solid black;
+            text-align: center;
+            /* font-weight: 700; */
+            padding: 10px;
+            /* font-size: 20px; */
+        }
+        #span
+        {
+            color: blue;
+        }
+        .janu,p
+        {
+            text-align: center;
+        }
+        #error1
+        {
+            text-align: center;
+            text-transform: capitalize;
+        }
+        #error2
+        {
+            text-align: center;
+            text-transform: capitalize;
+        }
+        #Phone
+        {
+            position: absolute;
+            top: 120;
+            left: 25;
+            display: none;
+            /* inset: 0; */
+        }
+        #pass
+        {
+            position: absolute;
+            top: 195px;
+            left: 25px;
+            display: none;
+        }
+        #b1
+        {
+            margin: 5px 0px;
+            padding: 10px;
+            border: 0px;
+            border-radius: 5PX;
+            background-color: rgb(49, 129, 235);
+            position: absolute;
+            top: 190px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header id="Instagram">
+        <div class="Login">
+            <h1></h1>  <!-- this is image of Instagram -->
+            <span id="Phone">Phone number,Mobile number,Email</span>
+            <input type="text" placeholder="Phone number,Mobile number,Email" oninput="insta1(this,'error1','Phone number')">
+            <span id="error1"></span>
+            <span id="pass">Password</span>
+            <input type="password" placeholder="Password" id="input" oninput="insta2(this,'error2','Password')">
+            <span id="error2"></span>
+            <button id="b1" onclick="show()">
+                show
+            </button>
+            <button id="b2">
+                Log in
+            </button>
+            <p>
+                or
+            </p>
+            
+            <p>
+                <span><i class="fa-brands fa-facebook-f" id="f-icon"></i></span>
+                Log in with Facebook
+            </p>
+            <p>
+                Forgotten Password
+            </p>
+        </div>
+
+
+        <div class="deepak">
+        Don't have an account? <span id="span">sing up</span>  
+        </div>
+        <div class="janu">
+            <p>
+                Get the app.
+            </p>
+            <img src="../image/Google-play.jpg" alt="" style="width: 124PX;">
+            <img src="../image/Microsoft.jpg" alt="" style="width: 100PX;">
+        </div>
+    </header>
+
+
+    <SCript>
+        function insta1(a,mehul,name) 
+        {
+            document.getElementById("Phone").style.display="block";
+
+            if (a.value == "") {
+                document.getElementById(mehul).innerText = "enter valid" + " " + name;
+                document.getElementById(mehul).style.color="red"
+                document.getElementById("Phone").style.display="none";             
+            }
+            else
+            {
+                document.getElementById(mehul);
+            }
+        }
+        
+        function insta2(b,mehul,name)
+        {
+            document.getElementById("pass").style.display="block";
+
+            if (b.value == "") {
+                document.getElementById(mehul).innerText = "enter valid" + " " + name;
+                document.getElementById(mehul).style.color="red";
+                document.getElementById("pass").style.display="none"; 
+            }
+            else
+            {
+                document.getElementById(mehul);
+            }
+        }
+        function show() {
+            let btn=document.getElementById("b1");
+            let pswd=document.getElementById("input");
+
+            if (btn.innerText=="show"&&pswd.type=="password") 
+            {
+                btn.innerText="hide";
+                pswd.type="text";    
+            }
+            else
+            {
+                btn.innerText="show";
+                pswd.type="password";
+            }
+        }
+    </SCript>
+</body>
+</html>
