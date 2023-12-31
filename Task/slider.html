@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        #b1
+        {
+            position: absolute;
+            padding: 0px 50px;
+            margin: 10px 100px;
+            font-size: 35px;
+            top: 440px;
+            left: 400px;
+        }
+        #b2
+        {
+            position: absolute;
+            padding: 0px 50px;
+            margin: 10px 100px;
+            font-size: 35px;
+            top: 440px;
+            right: 400px;
+        }
+        .color2
+        {
+            display: flex;
+            margin-top: 40px;
+            justify-content: center;
+        }
+        #mehul
+        {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black ;
+            margin-left: 100px;
+            /* margin: 120px 0px 0px 100px; */
+        }
+        #madhu
+        {
+            width: 1000px;
+            height: 500px;
+            border: 2px solid black ;
+            /* margin-left: 100px; */
+            /* display: flex; */
+            margin: 0 auto;
+            position: relative;
+            background: url(../../NEW_CSS/16.Gradient/image/multiple.jpg);
+            box-sizing: border-box;
+            /* background: cover; */
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="mehul">
+            <div id="madhu">
+                <!-- balnk -->
+            </div>
+        </div>
+        <div class="color2">
+            <button id="b1" onclick="left()"><i class="fa-solid fa-arrow-left"></i></button>
+            <button id="b2" onclick="right()"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <script>
+        let color=["red", "green", "blue", "yellow", "teal", "gold", "brown", "purple", "grey", "black"];
+        let currentIndex = 0;
+        let mehul =document.getElementById("mehul");
+        function right()
+        {
+            document.getElementById("madhu").style.background = color[currentIndex];
+            currentIndex++;
+            setInterval(() => {
+                document.getElementById("madhu").style.background = color[currentIndex];
+                currentIndex++;
+            }, 1000);
+        }
+        let color2=["black","grey","purple","brown","gold","teal","yellow","blue","green","red"]
+        function left()
+        {
+            document.getElementById("madhu").style.background = color2[currentIndex];
+            currentIndex++;
+            document.getElementById("madhu").style.background = 
+            setInterval(() => {
+                document.getElementById("madhu").style.background = color2[currentIndex];
+                currentIndex++;
+            }, 1000);
+            if (currentIndex == 0) {
+                
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User_color</title>
+    <style>
+        header
+        {
+            display: flex;
+            margin: 10px 0px;
+        }
+        #block
+        {
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+        }
+        #msg
+        {
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            margin: 0px 10px;
+            padding: 10px   ;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="user_color">
+        
+        <button id="button1" onclick="find_color()">
+            find color
+        </button>
+    <header>
+        <div id="block">
+            <!-- balnk -->
+        </div>
+        <div id="msg" >
+            color name<!-- masg -->
+        </div>
+    </header>
+    <script>
+
+        function find_color()
+         {
+            let input1= document.getElementById("user_color").value;
+            let show_color=document.getElementById("block");
+            let showcolor=document.getElementById("msg");
+            show_color.style.background=input1; //input1 it is give the value to show_color
+            // showcolor.style.background=input1; //input1 it is give the value to show_color
+            // show_color.innerText= ("this is color is "+input1)
+            alert("this color name is "+input1)
+            // alert("this color name is "+msg.input1)
+            showcolor.innerText= ("this is color is "+input1)
+        }
+        
+
+</script>
+
+</body>
+</html>

@@ -3,47 +3,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shape</title>
+    <style>
+        body{
+            border: 1px solid black;
+            padding: 20px;
+            /* hight: 100px; */
+            /* width: 600px; */
+            /* display: flex; */
+            justify-content: space-around;
+        }
+        .mehul
+        {
+            display: flex;
+        }
+        .bhargav
+        {
+            display: flex;
+        }
+        h1{
+            margin-right: 30px;
+        }       
+    </style>
 </head>
 <body>
+    <div class="mehul">
     <h1>first shape</h1>
     <script>
-        for (let i = 0; i <= 9; i++)
+
+        // 0 1 2 3 4 5 6 7 8 9
+        // 0 1 2 3 4 5 6 7 8
+        // 0 1 2 3 4 5 6 7
+        // 0 1 2 3 4 5 6
+        // 0 1 2 3 4 5
+        // 0 1 2 3 4
+        // 0 1 2 3
+        // 0 1 2
+        // 0 1
+        // 0
+
+        let n = 9
+        for (let i = 0; i <= n; i++) // outer loop
         {
-            for (let j = 0; j <= i; j++)
+            for (let j = 0; j <= n-i; j++) //inner loop
             {
-                // document.write(j)
-                document.write("*")
+                document.write(j)
             }
+            // document.write(i)
             document.write("<br>")
         }
 
     </script>
+    </div>
 
+
+    <div class="mehul">
     <h1>second shape</h1>
     <script>
-        for (let b = 0; b <= 9; b++) 
+
+        //  $ $ $ $ $ $ $ $ $ $ #
+        //  $ $ $ $ $ $ $ $ $ $ #
+        //  $ $ $ $ $ $ $ $ $ $ #
+        //  $ $ $ $ $ $ $ $ $ $ #
+        //  $ $ $ $ $ $ $ $ $ $ #
+        //  $ $ $ $ $ $ $ $ $ $ #
+        //  $ $ $ $ $ $ $ $ $ $ #
+        //  $ $ $ $ $ $ $ $ $ $ #
+        //  $ $ $ $ $ $ $ $ $ $ #
+        //  $ $ $ $ $ $ $ $ $ $ #
+
+
+        let z = 9
+        for (let h = 0; h <= z; h++) 
         {
-            for (let k = 0; k <= 9; k++) {
-                document.write("@")
-            }
-            document.write("<br>")
+            // document.write(h)
+            // console.log(h); 
+            for (let t = 0; t <= z; t++) 
+            {
+                document.write("&nbsp")
+                document.write("$");
+            } 
+            // document.write("#");
+            document.write("<br>");
+            // document.write("&nbsp")
         }
     </script>
+    </div>
+    
+    <!-- <br> -->
 
+    <div class="bhargav">
     <h1>thrid shape</h1>
     <script>
-    for (i = 0; i <= 9; i++ )
-    {
-        document.write("</br>");
-        for ( j = 0; j < 10-i   ; j++ )
-        {
-            document.write("&nbsp&nbsp");
-        }
-        for ( j = 10-i; j <= 9; j++)
-        {
-            document.write("$");    
-        }
-    }
+    // for (i = 0; i <= 9; i++ )
+    // {
+    //     document.write("<br>");
+    //     for ( j = 0; j < 10-i   ; j++ )
+    //     {
+    //         document.write("&nbsp&nbsp");
+    //     }
+    //     for ( j = 10-i; j <= 9; j++)
+    //     {
+    //         document.write("$");    
+    //     }
+    // }
+
+    
+
+    
     </script>
+    </div>
+
+    <div></div>
 </body>
 </html>

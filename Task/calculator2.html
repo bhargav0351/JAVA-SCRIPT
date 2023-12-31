@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY13</title>
+    <style>
+        input
+        {
+            /* padding: 20px; */
+            border: 2px solid black;
+            padding: 10px 20px 40px 5px;
+            font-size: 20px;
+            text-align: right;
+        }
+        .wrapper
+        {
+            width: 20%;
+            margin: 0 auto;
+            position: relative;
+        }
+        #ans
+        {
+            position: absolute;
+            bottom: 15px;
+            right: 20px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <input type="text" id="input1" placeholder="0">
+    <span id="ans">
+        <!-- bhrgav -->
+    </span>
+    </div>
+    
+    <div class="wrap2">
+        <button  onclick="number(this)" >9</button>
+        <button  onclick="number(this)" >8</button>
+        <button  onclick="number(this)" >7</button>
+        <button  onclick="number(this)" >6</button>
+        <button  onclick="number(this)" >5</button>
+        <button  onclick="number(this)" >4</button>
+        <button  onclick="number(this)" >3</button>
+        <button  onclick="number(this)" >2</button>
+        <button  onclick="number(this)" >1</button>
+        <button  onclick="number(this)" >0</button>
+        <button  onclick="number(this)" >00</button>
+        <button  onclick="number(this)" >.</button>
+        <button onclick="function_delete()" id="delete" >c</button>
+        <button onclick="function_(this)" >+</button>
+        <button onclick="function_(this)" >-</button>
+        <button onclick="function_(this)" >*</button>
+        <button onclick="function_(this)" >/</button>
+        <button onclick="function_total()">=</button>
+    </div>
+
+
+    <script>
+
+        let input1=document.getElementById('input1');
+
+        function number(e)
+        {
+            // console.log(e.value);
+            input1.value += e.innerText;  //input1.value=input1.value+e.innertext;
+        }
+        function function_(d)
+        {
+            input1.value += d.innerText;
+        }
+
+        function function_total()
+        {
+            document.getElementById('ans').innerText=eval(input1.value);
+            // input1.value=eval(input1.value);
+        }
+
+        function function_delete()
+        {
+            // input1.value=d.innerText="";
+            input1.value=input1.value="";
+        }
+
+    </script>
+
+</body>
+</html>
