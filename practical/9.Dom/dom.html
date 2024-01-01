@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get HTML Data</title>
+    <style>
+        input
+        {
+            padding: 5px 0px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Get HTML Data</h1>
+    <input type="text" name="one" id="one" class="one" value="bhargav" tag="one"/>
+    <br>
+    <br>
+    <input type="text" name="two" id="two" class="two" value="mehul" tag="two"/>
+    <br>
+    <br>
+    <input type="text" name="three" id="three" class="three" value="raj" tag="three"/>
+    <br>
+    <br>
+    <input type="text" name="four" id="four" class="four" value="keval" tag="four"/>
+    <br>
+    <br>
+    <input type="text" name="five" id="five" class="five" value="jay" tag="five"/>
+    <br>
+    <br>
+    <input type="text" name="six" id="six" class="six" value="deepak" tag="six"/>
+    <br>
+    <br>
+    <input type="text" name="seven" id="seven" class="seven" value="arjun" tag="seven"/>
+    <br>
+    <br>
+    <input type="text" name="eight" id="eight" class="eight" value="nitin" tag="eight"/>
+
+    <script>
+      // Get HTML DATA
+
+      // By Id
+
+      let a1 = document.getElementById("one");
+      let a2 = document.getElementById("two");
+      let a3 = document.getElementById("three");
+      let a4 = document.getElementById("four");
+      let a5 = document.getElementById("five");
+      let a6 = document.getElementById("six");
+      let a7 = document.getElementById("seven");
+      let a8 = document.getElementById("eight");  
+      console.log(a1);
+      console.log(a1.value);
+      
+      console.log(a2);
+      console.log(a2.value);
+
+      console.log(a3);
+      console.log(a3.value);
+
+      console.log(a4);
+      console.log(a4.value);
+
+      console.log(a5);
+      console.log(a5.value);
+
+      console.log(a6);
+      console.log(a6.value);
+
+      console.log(a7);
+      console.log(a7.value);
+
+      console.log(a8);
+      console.log(a8.value);
+
+      // By ClassName
+
+      // let inpData = document.getElementsByClassName("same");
+      // // let inpData = document.getElementById("first").value
+      // console.log(inpData);
+      // console.log(inpData[5].value); // undefined
+
+
+      let b1 = document.getElementsByClassName("one");
+      let b2 = document.getElementsByClassName("two");
+      let b3 = document.getElementsByClassName("three");
+      let b4 = document.getElementsByClassName("four");
+      let b5 = document.getElementsByClassName("five");
+      let b6 = document.getElementsByClassName("six");
+      let b7 = document.getElementsByClassName("seven");
+      let b8 = document.getElementsByClassName("eight");  
+      console.log(b1);
+      console.log(b1.value);
+      
+      console.log(b2);
+      console.log(b2.value);
+
+      console.log(b3);
+      console.log(b3.value);
+
+      console.log(b4);
+      console.log(b4.value);
+
+      console.log(b5);
+      console.log(b5.value);
+
+      console.log(b6);
+      console.log(b6.value);
+
+      console.log(b7);
+      console.log(b7.value);
+
+      console.log(b8);
+      console.log(b8.value);
+
+      // By  Name
+
+      //   let inpData = document.getElementsByName("first");
+      //   // let inpData = document.getElementById("first").value
+      //   console.log(inpData);
+      //   console.log(inpData.value);  // undefined
+
+      let c1 = document.getElementsByName("one");
+      let c2 = document.getElementsByName("two");
+      let c3 = document.getElementsByName("three");
+      let c4 = document.getElementsByName("four");
+      let c5 = document.getElementsByName("five");
+      let c6 = document.getElementsByName("six");
+      let c7 = document.getElementsByName("seven");
+      let c8 = document.getElementsByName("eight");  
+      console.log(c1);
+      console.log(c1.value);
+      
+      console.log(c2);
+      console.log(c2.value);
+
+      console.log(c3);
+      console.log(c3.value);
+
+      console.log(c4);
+      console.log(c4.value);
+
+      console.log(c5);
+      console.log(c5.value);
+
+      console.log(c6);
+      console.log(c6.value);
+
+      console.log(c7);
+      console.log(c7.value);
+
+      console.log(c8);
+      console.log(c8.value);
+
+
+      // By Tag Name
+
+      //   let inpData = document.getElementsByTagName("Input");
+      // //   // let inpData = document.getElementById("first").value
+      //   console.log(inpData);
+      //   console.log(inpData[5].value);    // undefined
+
+      let d1 = document.getElementsByTagName("one");
+      let d2 = document.getElementsByTagName("two");
+      let d3 = document.getElementsByTagName("three");
+      let d4 = document.getElementsByTagName("four");
+      let d5 = document.getElementsByTagName("five");
+      let d6 = document.getElementsByTagName("six");
+      let d7 = document.getElementsByTagName("seven");
+      let d8 = document.getElementsByTagName("eight");  
+      console.log(d1);
+      console.log(d1.value);
+      
+      console.log(d2);
+      console.log(d2.value);
+
+      console.log(d3);
+      console.log(d3.value);
+
+      console.log(d4);
+      console.log(d4.value);
+
+      console.log(d5);
+      console.log(d5.value);
+
+      console.log(d6);
+      console.log(d6.value);
+
+      console.log(d7);
+      console.log(d7.value);
+
+      console.log(d8);
+      console.log(d8.value);
+
+        // querySelector
+
+        // let inpData = document.querySelector("input");
+        //   let inpData = document.getElementById("first").value
+        //   console.log(inpData);
+        //   console.log(inpData.value);
+
+        let e1 = document.querySelector("input");
+        let e2 = document.querySelector("input");
+        let e3 = document.querySelector("three");
+        let e4 = document.querySelector("four");
+        let e5 = document.querySelector("five");
+        let e6 = document.querySelector("six");
+        let e7 = document.querySelector("seven");
+        let e8 = document.querySelector("eight");    
+        console.log(e1);
+        // console.log(e2);
+
+
+        //   querySelectorAll
+
+        //   let inpData = document.querySelectorAll("input");
+        //   let inpData = document.getElementById("first").value
+        //   console.log(inpData);
+        //   console.log(inpData[5].value);   // undefined
+
+
+        let f1 = document.querySelectorAll("input");
+        // let f2 = document.querySelectorAll("two");
+        // let f3 = document.querySelectorAll("three");
+        // let f4 = document.querySelectorAll("four");
+        // let f5 = document.querySelectorAll("five");
+        // let f6 = document.querySelectorAll("six");
+        // let f7 = document.querySelectorAll("seven");
+        // let f8 = document.querySelectorAll("eight");
+
+        console.log(f1);
+    </script>
+  </body>
+</html>

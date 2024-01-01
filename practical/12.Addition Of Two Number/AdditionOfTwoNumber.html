@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Addition Of Two Number</title>
+  </head>
+  <body>
+    <h1>Addition Of Two Number</h1>
+    <hr />
+    <!-- <input type="text" name="first" id="first" value="arjun" />
+    <input type="text" name="second" id="second" value="vaja" />
+    <button>Add</button> -->
+
+    <input type="number" name="first" id="first" />
+    <input type="number" name="second" id="second" />
+    <button onclick="Add()">Add</button>
+    <button onclick="sub()">sub</button>
+    <span id="Show"></span>
+
+    <script>
+      //   let firstNumber = document.getElementById("first").value;
+      //   let secondNumber = document.getElementById("second").value;
+      //   console.log(firstNumber);
+      //   console.log(secondNumber);
+      //   console.log(firstNumber + ' ' +secondNumber);
+      //   console.log(typeof (firstNumber + secondNumber));
+
+      function Add() {
+        let firstNumber = parseFloat(document.getElementById("first").value)
+        let secondNumber = parseFloat(document.getElementById("second").value)
+        let sum = firstNumber + secondNumber;
+        console.log(typeof (firstNumber + secondNumber));
+        document.getElementById('Show').innerHTML = sum;
+
+        // document.write(sum)
+        // console.log(firstNumber);
+        // console.log(typeof firstNumber);
+        // console.log(secondNumber);
+        // console.log(typeof secondNumber);
+        // console.log(firstNumber + secondNumber);
+    }
+
+
+    function sub() 
+    {
+        let firstNumber = parseFloat(document.getElementById("first").value);
+        let secondNumber = parseFloat(document.getElementById("second").value);
+        let sub = firstNumber - secondNumber;
+        document.getElementById('Show').innerHTML = sub;  
+    }
+    </script>
+  </body>
+</html>
